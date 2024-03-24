@@ -30,6 +30,8 @@ RUN cpanm -n App::cpanminus && \
 
 # Setup Chinese 
 COPY ./edukai-5.0.ttf /usr/share/fonts/edukai-5.0.ttf
+COPY ./Times-New-Roman.ttf /usr/share/fonts/Times-New-Roman.ttf
+
 RUN fc-cache -fv && \
 	tlmgr install xecjk
 
