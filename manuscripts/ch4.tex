@@ -1,0 +1,13 @@
+\chapter{肆、本樣版的使用方式}
+\begin{enumerate}
+    \item 至\href{http://www.miktex.org/}{ MiKTeX網站}下載 MiK\TeX ，並安裝「 Total」的MiK\TeX 套件。
+    \item \href{http://www.amath.nchu.edu.tw/~u4815977/cwtex3.rar}{下載cw\TeX}。
+    \item 將cwtex3.rar解壓縮後，點「cwtex-basic.exe」安裝\it{cw}\TeX （注意安裝時的訊息）。
+    \item 將本樣版所在的資料夾複製到「d:$\backslash$tex」內。
+    \item 將樣版（中文論文樣版檔名為NCHU\_Chinese.ctx、英文樣版檔名為NCHU\_English.ctx）另存新檔。
+    \item 直接修改另存後之樣版內的標題與內容（封面請於ThesisTitle.ctx中修改）。
+    \item 編譯流程：\it{cw}\TeX $\rightarrow$\LaTeX $\rightarrow$ \LaTeX $\rightarrow$ divpdfmx\\
+        （因為需要產生目錄、相關的參考頁面或完成的PDF檔有超連結功能，所以需要點「\LaTeX 」兩次。）
+    \item 在引入 .png or .jpg 圖檔時，必須先將圖檔 copy 到 c:$\backslash$xtemp 目錄中，然後產生 .bb檔，產生 .bb檔的方法請參考\it{cw}\TeX 排版系統 p.209頁。
+    \item Mik\TeX 及\it{cw}\TeX 安裝過程，請參考應數系李政軒助教製作的\href{http://www.amath.nchu.edu.tw/~u4815977/How_to_Install_cwTeX/How_to_Install_cwTeX.html}{安裝教學網站}
+\end{enumerate}
