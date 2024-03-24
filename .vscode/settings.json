@@ -13,6 +13,15 @@
             ]
         },
         {
+            "name": "xelatex -> bibtex -> xelatex * 2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
             "name": "pdflatex -> bibtex -> pdflatex * 2",
             "tools": [
                 "pdflatex",
@@ -241,5 +250,6 @@
         "%DOCFILE%.vrb",
         "*/*.aux"
     ],
+    // "latex-workshop.latex.autoBuild.run": "never",
     // "latex-workshop.latex.autoClean.run": "onSucceeded"
 }

@@ -34,6 +34,7 @@
 \renewcommand{\contentsname}{目錄}
 \renewcommand{\listfigurename}{圖目次}
 \renewcommand{\listtablename}{表目次}
+\renewcommand{\bibname}{參考文獻}
 
 %---------------------------------------------------
 %設定圖表標題和排序方式
@@ -85,7 +86,7 @@
 %封面
 \newpage
 \thispagestyle{empty}
-\include{manuscripts/ThesisTitle}
+\input{manuscripts/ThesisTitle}
 
 %空白頁（題贈用）
 \newpage
@@ -96,7 +97,7 @@
 %書名頁（中文）
 \newpage
 \thispagestyle{empty}
-\include{manuscripts/ThesisTitle}
+\input{manuscripts/ThesisTitle}
 
 \newpage
 \thispagestyle{empty}
@@ -128,7 +129,7 @@
 
 \newpage
 \begin{center}
-    {\LARGE SUMMARY}
+    {\LARGE ABSTRACT}
 \end{center}
 %==========================================================================================================================
 精簡原則與中文摘要相同，必須注意專有名詞的翻譯是否正確。
@@ -150,8 +151,9 @@
 \include{manuscripts/ch5}
 
 \backmatter
-
-\include{manuscripts/reference}
+\addcontentsline{toc}{chapter}{參考文獻}
+\bibliographystyle{plain}
+\bibliography{thesis}
 
 \appendix
 \include{manuscripts/appendix}
